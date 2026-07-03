@@ -1,0 +1,181 @@
+
+.layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;  /* Only content scrolls */
+    padding: 20px;
+    background: #f8fafc;
+}
+
+.sidebar {
+    width: 80px;      /* icons only */
+    min-height: 100vh;
+    flex-shrink: 0;
+    background: #fff;
+    border-right: 1px solid #ececec;
+    padding: 0;
+    overflow: visible;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0;
+     border-radius: 0;   
+}
+
+.logo h2 {
+    margin: 12px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Tiered Menu */
+
+.custom-tiered{
+    width:100%;
+    border:none !important;
+    background:transparent !important;
+}
+
+/* Root menu */
+
+.custom-tiered .p-menu-list{
+    gap:8px;
+}
+
+/* Each Item */
+
+.custom-tiered .p-menuitem-link{
+
+    border-radius:10px;
+    padding:14px 16px;
+
+    transition:.25s;
+
+    color:#374151;
+}
+
+/* Hover */
+
+.custom-tiered .p-menuitem-link:hover{
+
+    background:#eff6ff !important;
+}
+
+/* Icon */
+
+.custom-tiered .p-menuitem-icon{
+
+    color:#3b82f6;
+    font-size:18px;
+    margin-right:14px;
+}
+
+/* Text */
+
+.custom-tiered .p-menuitem-text{
+
+    font-size:15px;
+    font-weight:500;
+}
+
+/* Arrow */
+
+.custom-tiered .p-submenu-icon{
+
+    display: none !important;
+}
+
+/* Popup submenu */
+
+.p-tieredmenu-overlay{
+
+    border:none !important;
+
+    border-radius:14px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    padding:10px;
+
+    background:#fff;
+}
+
+/* submenu items */
+
+.p-tieredmenu-overlay .p-menuitem-link{
+
+    border-radius:10px;
+}
+
+.p-tieredmenu-overlay .p-menuitem-link:hover{
+
+    background:#f5f7fb !important;
+}
+
+/* Only the popup submenu */
+.p-tieredmenu .p-submenu-list {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 6px;
+}
+
+/* Submenu items */
+.p-tieredmenu .p-submenu-list .p-menuitem-link {
+    background: #ffffff !important;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+.p-tieredmenu .p-submenu-list .p-menuitem-link:hover {
+    background: #f3f4f6 !important;
+}
+
+/* Root menu items only */
+.custom-tiered > .p-tieredmenu-root-list > .p-menuitem > .p-menuitem-content > .p-menuitem-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+/* Root menu icons */
+.custom-tiered > .p-tieredmenu-root-list > .p-menuitem > .p-menuitem-content > .p-menuitem-link .p-menuitem-icon {
+    margin-right: 0;
+    font-size: 1.rem;
+}
+
+/* Root menu text */
+.custom-tiered > .p-tieredmenu-root-list > .p-menuitem > .p-menuitem-content > .p-menuitem-link .p-menuitem-text {
+    font-size: 14px;
+}
+
+/* Keep submenu items horizontal */
+.custom-tiered .p-submenu-list .p-menuitem-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

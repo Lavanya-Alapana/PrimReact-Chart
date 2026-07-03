@@ -1,0 +1,91 @@
+import "primeicons/primeicons.css";
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+}
+.chart {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 30px;
+  background: white;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.charts-container{
+  display: flex;
+  gap:20px;
+  width:100%
+}
+.charts-container > * {
+  flex: 1;
+}
+
+.chart-title{
+  text-align: left;
+}
+
+.excel-button{
+ display: flex;
+  justify-content: flex-end;
+}
+
+
+.layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;  /* Only content scrolls */
+    padding: 20px;
+    background: #f8fafc;
+}
+
+.sidebar {
+    width: 80px;      /* icons only */
+    min-height: 100vh;
+    flex-shrink: 0;
+    background: #fff;
+    border-right: 1px solid #ececec;
+    padding: 0;
+    overflow: visible;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0;
+     border-radius: 0;   
+}
+
+.logo h2 {
+    margin: 12px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
