@@ -45,26 +45,32 @@ h3 {
 
 .layout {
     display: flex;
+     margin-top: 70px;   /* Same as header height */
+    height: calc(100vh - 70px);
     height: 100vh;
     overflow: hidden;
 }
 
 .content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;  /* Only content scrolls */
-    padding: 20px;
-    background: #f8fafc;
-}
+    margin-left: 100px;                 /* Sidebar width */
+    width: calc(100% - 100px);
 
+    height: calc(100vh - 70px);
+
+    overflow-y: auto;
+
+    padding: 25px;
+   
+}
 .sidebar {
-    width: 80px;      /* icons only */
-    min-height: 100vh;
-    flex-shrink: 0;
-    background: #fff;
-    border-right: 1px solid #ececec;
-    padding: 0;
-    overflow: visible;
+    width: 100px;
+    height: calc(100vh - 70px);
+
+    position: fixed;
+    top: 70px;
+    left: 0; 
+
+  overflow: visible;
 }
 
 /* Logo */

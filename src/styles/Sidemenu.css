@@ -10,40 +10,20 @@
     padding: 20px;
     overflow-y: auto;  /* Only content scrolls */
     padding: 20px;
-    background: #f8fafc;
+    
 }
 
 .sidebar {
-    width: 80px;      /* icons only */
+    width: 107px;      /* icons only */
     min-height: 100vh;
     flex-shrink: 0;
-    background: #fff;
-    border-right: 1px solid #ececec;
+      background:#f8fafc;
+      border-right: 1px solid #e5e7eb;;
     padding: 0;
     overflow: visible;
 }
 
 /* Logo */
-.logo {
-    width: 100%;
-    background: #2563eb;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px 0;
-     border-radius: 0;   
-}
-
-.logo h2 {
-    margin: 12px 0 0;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-}
 
 
 /* Tiered Menu */
@@ -64,7 +44,7 @@
 
 .custom-tiered .p-menuitem-link{
 
-    border-radius:10px;
+ 
     padding:14px 16px;
 
     transition:.25s;
@@ -147,7 +127,8 @@
 
 /* Hover effect */
 .p-tieredmenu .p-submenu-list .p-menuitem-link:hover {
-    background: #f3f4f6 !important;
+        background:#2563eb !important;
+    color:white !important;
 }
 
 /* Root menu items only */
@@ -178,4 +159,13 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+.custom-tiered .p-menuitem-link:hover{
+
+    background:#2563eb !important;
+    color:white !important;
+}
+.custom-tiered .p-menuitem-link:hover .p-menuitem-icon{
+    color:white;
 }

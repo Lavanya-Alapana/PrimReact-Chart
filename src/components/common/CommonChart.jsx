@@ -21,7 +21,7 @@ function CommonChart({ type, title, labels, datasets, options = {} }) {
           ...options.scales,
           y: {
             ...options.scales?.y,
-            ...getYAxisScale(datasets, 7),
+            ...getYAxisScale(datasets, 5),
           },
         },
       }

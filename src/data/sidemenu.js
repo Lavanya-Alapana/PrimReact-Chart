@@ -35,6 +35,7 @@ export const getMenuItems = (navigate) => [
   {
     label: "Products",
     icon: "pi pi-box",
+     command: () => navigate("/products"),
     items: [
       {
         label: "Product List",
