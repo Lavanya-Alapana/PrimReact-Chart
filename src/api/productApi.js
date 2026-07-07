@@ -6,3 +6,9 @@ export const getProducts = async () => {
   const response = await axios.get(API_URL);
   return response.data.products;
 };
+
+
+export const getcartItems=async()=>{
+  const reponse=await axios.get("https://dummyjson.com/carts");
+  return reponse.data.carts
+}

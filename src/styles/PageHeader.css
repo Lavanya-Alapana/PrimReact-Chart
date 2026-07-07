@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.page-header small {
+  color: var(--color-text-slate);
+}
+
+.page-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

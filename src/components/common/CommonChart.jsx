@@ -42,10 +42,11 @@ function CommonChart({ type, title, labels, datasets, options = {} }) {
   const handleExport = () => {
     exportExcel(exportData, title);
   };
-  console.log(chartData);
+
   return (
     <div className="chart">
-      <h3 className="chart-title">{title}</h3>
+     <div className="chart-header">
+       <h3 className="chart-title">{title}</h3>
       <div className="excel-button">
         <Button
           icon="pi pi-download"
@@ -53,6 +54,7 @@ function CommonChart({ type, title, labels, datasets, options = {} }) {
           tooltip="Export Excel"
         />
       </div>
+     </div>
 
       <Chart type={datasets[0]?.type} data={chartData} options={chartOptions} />
     </div>

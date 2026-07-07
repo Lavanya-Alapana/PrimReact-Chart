@@ -10,7 +10,9 @@ export default function SideMenu() {
      
 
       <TieredMenu
-        model={getMenuItems(navigate)}
+        model={location.pathname}
+        model={location.pathname}
+        model={getMenuItems(navigate,location.pathname)}
         className="custom-tiered"
         breakpoint="960px"
       />

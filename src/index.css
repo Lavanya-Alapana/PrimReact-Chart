@@ -1,15 +1,16 @@
-import "primeicons/primeicons.css";
+@import "primeicons/primeicons.css";
+@import "./styles/variable.css";
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
 }
 .chart {
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-chart-border);
   border-radius: 25px;
   padding: 30px;
-  background: white;
+  background: var(--color-surface-strong);
 }
 
 .logo {
@@ -23,75 +24,72 @@ h3 {
   font-size: 20px;
 }
 
-
-.charts-container{
+.charts-container {
   display: flex;
-  gap:20px;
-  width:100%
+  gap: 20px;
+  width: 100%;
 }
 .charts-container > * {
   flex: 1;
 }
 
-.chart-title{
+.chart-title {
   text-align: left;
 }
 
-.excel-button{
- display: flex;
+.excel-button {
+  display: flex;
   justify-content: flex-end;
 }
 
-
 .layout {
-    display: flex;
-     margin-top: 70px;   /* Same as header height */
-    height: calc(100vh - 70px);
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  margin-top: 70px; /* Same as header height */
+  height: calc(100vh - 70px);
+  height: 100vh;
 }
 
 .content {
-    margin-left: 100px;                 /* Sidebar width */
-    width: calc(100% - 100px);
-
-    height: calc(100vh - 70px);
-
-    overflow-y: auto;
-
-    padding: 25px;
-   
+  margin-left: 100px; /* Sidebar width */
+  width: calc(100% - 100px);
+  height: calc(100vh - 70px);
+  padding: 25px;
 }
 .sidebar {
-    width: 100px;
-    height: calc(100vh - 70px);
+  width: 100px;
+  height: calc(100vh - 70px);
 
-    position: fixed;
-    top: 70px;
-    left: 0; 
+  position: fixed;
+  top: 70px;
+  left: 0;
 
   overflow: visible;
 }
 
 /* Logo */
 .logo {
-    width: 100%;
-    background: #2563eb;
-    color: white;
+  width: 100%;
+  background: var(--color-accent-blue-strong);
+  color: var(--color-text-contrast);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    padding: 20px 0;
-     border-radius: 0;   
+  padding: 20px 0;
+  border-radius: 0;
 }
 
 .logo h2 {
-    margin: 12px 0 0;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
+  margin: 12px 0 0;
+  color: var(--color-text-contrast);
+  font-size: 18px;
+  font-weight: 600;
 }
 
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
